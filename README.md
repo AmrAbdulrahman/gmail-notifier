@@ -19,8 +19,8 @@
 
 ## Develope/Debug
 - Test as app, with DeveloperTools opened.
-  - vim index.js
-  - set DevelopmentMode = true
+  - on the repo root
+  - create dev.js that exports JSON with key developmentMode = True/False
   - npm start
 
 ## Package

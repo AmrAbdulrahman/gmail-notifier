@@ -1,8 +1,17 @@
 'use strict';
+var fs = require('fs');
+
 const electron = require('electron');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
-const DevelopmentMode = false;
+let DevelopmentMode;
+
+try {
+  fs.readFileSync('./dev.js');
+  DevelopmentMode = require('./dev').developmentMode;
+} catch (e) {
+  DevelopmentMode = false;
+}
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
