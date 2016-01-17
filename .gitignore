@@ -1,3 +1,6 @@
 node_modules/
 app/node_modules/
 app/bower_components/
+GNotifyMe-darwin-x64
+GNotifyMe-linux-x64
+GNotifyMe-win32-x64
