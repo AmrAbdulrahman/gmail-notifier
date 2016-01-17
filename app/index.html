@@ -1,0 +1,32 @@
+<html ng-app="GClientApp">
+  <head>
+    <title>GClient</title>
+
+    <!-- vendor -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- app -->
+    <link rel="stylesheet" href="ui/styles/app.css" />
+  </head>
+  <body>
+    <div ui-view></div>
+
+    <!-- vendor -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- app -->
+    <script type="text/javascript" src="ui/app.js"></script>
+    <script type="text/javascript" src="ui/routes.js"></script>
+
+    <!-- app:services -->
+    <script type="text/javascript" src="ui/services/auth-srvc.js"></script>
+    <script type="text/javascript" src="ui/services/labels-srvc.js"></script>
+
+    <!-- app:controllers -->
+    <script type="text/javascript" src="ui/components/header/header-ctrl.js"></script>
+    <script type="text/javascript" src="ui/states/init/init-ctrl.js"></script>
+    <script type="text/javascript" src="ui/states/login/login-ctrl.js"></script>
+    <script type="text/javascript" src="ui/states/labels/labels-ctrl.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<div ng-include="'ui/components/header/header.html'"></div>
+<div ng-controller="LabelsCtrl" class="main-content">
+    <div ng-show="loading">Loading...</div>
+    <div ng-show="!loading && error">Something went wrong!</div>
+    <div ng-show="!loading && !error">
+        <ul>
+            <li ng-repeat="label in labels">{{label.name}}</li>
+        </ul>
+    </div>
+</div>

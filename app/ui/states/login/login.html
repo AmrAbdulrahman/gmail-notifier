@@ -1,0 +1,16 @@
+<div ng-controller="LoginCtrl" class="container-fluid login-wrapper">
+    <form class="login text-center">
+        <div ng-show="loading">Loading...</div>
+        <div ng-show="!loading && error">Something went wrong!</div>
+        <div ng-show="!loading && !error">
+            <p>
+                <span class="login-text">Login using your Google account.</span>
+                <a href="{{authorizationUrl}}" target="_" class="btn btn-info btn-block">
+                    Get Authorization Code
+                </a>
+            </p>
+            <input type="text" ng-model="authorizationCode" placeholder="Paste code here" class="form-control" required />
+            <input type="submit" ng-click="login()" value="Login" class="btn btn-primary btn-block login-btn" />
+        </div>
+    </form>
+</div>

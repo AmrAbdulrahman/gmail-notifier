@@ -1,0 +1,24 @@
+{
+  "name": "electron-gmail-client",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Amr Abdulrahman <abu.muslim.amr@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "ui-router#~0.2.15",
+    "bootstrap": "~3.3.6"
+  }
+}
