@@ -1,0 +1,10 @@
+<div ng-include="'ui/components/header/header.html'"></div>
+<div ng-controller="MessagesCtrl" class="main-content">
+    <div ng-show="loading">Loading...</div>
+    <div ng-show="!loading && error">Something went wrong!</div>
+    <div ng-show="!loading && !error">
+        <ol>
+            <li ng-repeat="message in messages">{{message.snippet}}</li>
+        </ol>
+    </div>
+</div>

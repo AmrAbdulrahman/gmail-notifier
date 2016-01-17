@@ -3,7 +3,7 @@ angular
     .module('GClientApp', [
         'ui.router'
     ])
-    .constant('DEFAULT_STATE', 'labels')
+    .constant('DEFAULT_STATE', 'messages')
     .run(function($rootScope, $state, $log, authSrvc) {
         $rootScope.$on('$stateChangeSuccess', function() {
             var stateName = $state.current.name;

@@ -16,5 +16,9 @@ angular
       .state('labels', {
         url: '/labels',
         templateUrl: 'ui/states/labels/labels.html'
+      })
+      .state('messages', {
+        url: '/messages',
+        templateUrl: 'ui/states/messages/messages.html'
       });
   });
