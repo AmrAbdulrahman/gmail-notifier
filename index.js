@@ -2,7 +2,7 @@
 const electron = require('electron');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
-const DevelopmentMode = true;
+const DevelopmentMode = false;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -26,7 +26,7 @@ app.on('ready', function() {
   if (DevelopmentMode) {
     mainWindow = new BrowserWindow({width: 1000, height: 340, icon: iconPath});
   } else {
-    mainWindow = new BrowserWindow({width: 350, height: 340, resizable:false, icon: iconPath});
+    mainWindow = new BrowserWindow({width: 400, height: 340, resizable:false, icon: iconPath});
   }
 
   // and load the index.html of the app.

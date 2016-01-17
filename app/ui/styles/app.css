@@ -8,8 +8,8 @@ Login
 ******************************/
 .login-wrapper {
     margin-top: 40px;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 form.login {
@@ -25,6 +25,10 @@ form.login {
 
 .login-btn {
     margin-top: 10px;
+}
+
+form.login .error-message {
+    margin-bottom: 10px;
 }
 
 

@@ -16,8 +16,10 @@ angular
                     $state.go(DEFAULT_STATE);
                 }, function(err) {
                     $scope.error = true;
+                    $scope.$apply();
                 })['finally'](function() {
                     $scope.loading = false;
+                    $scope.$apply();
                 });
         };
     });

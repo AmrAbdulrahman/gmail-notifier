@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
-    "package": "./node_modules/.bin/electron-packager . GClient  --platform=all --arch=x64 --version=0.36.2"
+    "package": "./node_modules/.bin/electron-packager . GNotifyMe  --platform=all --arch=x64 --version=0.36.2"
   },
   "author": "",
   "license": "ISC",
