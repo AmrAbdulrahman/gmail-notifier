@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
+    "clean": "rm -R GNotifyMe-*",
     "package": "./node_modules/.bin/electron-packager . GNotifyMe  --platform=all --arch=x64 --version=0.36.2"
   },
   "author": "",
